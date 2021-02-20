@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package KhachSan;
+package SinhVien;
 
 import java.util.Scanner;
 
@@ -17,14 +17,21 @@ public class Main {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        
         // TODO code application logic here
         Scanner sc = new Scanner(System.in);
-        int n;
-        System.out.println("Nhập số lượng khách trọ :");
-        n = Integer.parseInt(sc.nextLine());
-       
+        SinhVien sv = new SinhVien();
+        sv.nhapThongTin();
         
+        // hien thi thong tin sv
+        sv.hienThiThongTin();
         
+        // tinh diem trung binh
+        double diemTb = sv.tinhDiemTrungBinh(sv.layDiemToan(), sv.layDiemLy(), sv.layDiemHoa());
+        
+       // xep loai diem
+       String xepLoai = sv.xepLoaiTrungBinh(diemTb);
+       System.out.println("Xếp loại: "+xepLoai);
     }
     
 }

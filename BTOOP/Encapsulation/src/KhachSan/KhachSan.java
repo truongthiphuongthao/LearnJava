@@ -10,5 +10,9 @@ package KhachSan;
  * @author truongthao
  */
 public class KhachSan {
+    private int soNgayTro;
+    private String loaiPhong;
+    private double giaPhong;
+    private Nguoi nguoi;
     
 }

@@ -30,9 +30,11 @@ public class KhachSan {
    
    public void nhapThongTinKhachSan(){
        Scanner sc = new Scanner(System.in);
+       
        // nhap thong tin nguoi
        nguoi = new Nguoi();
        nguoi.nhapThongTinNguoi();
+       
        System.out.println("Nhap so ngay tro: ");
        soNgayTro = sc.nextInt();
        sc.nextLine();
@@ -43,7 +45,9 @@ public class KhachSan {
    }
    
    public void hienThiThongTinKhachSan(){
+       
       nguoi.hienThiNguoi();
+      
       System.out.println("So ngay tro: "+soNgayTro);
       System.out.println("Loai phong: "+loaiPhong);
       System.out.println("Gia phong: "+giaPhong);
